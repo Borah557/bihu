@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="as">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বিহুৰ শুভেচ্ছা | Bohag Bihu Wishes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Assamese:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #f8c537;
+            --secondary: #e84c3d;
+            --green: #2ecc71;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans Assamese', sans-serif;
+        }
+        
+        body {
+            background-color: #f9f5e0;
+            background-image: url('https://i.imgur.com/JQZQvQj.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: var(--dark);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .designer-credit {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(255,255,255,0.8);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            z-index: 100;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            position: relative;
+            animation: fadeIn 1.5s ease;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            color: var(--secondary);
+            text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--dark);
+            margin-bottom: 20px;
+        }
+        
+        .bihu-icon {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23e84c3d" d="M50 10c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm0 75c-19.3 0-35-15.7-35-35s15.7-35 35-35 35 15.7 35 35-15.7 35-35 35z"/><path fill="%23f8c537" d="M50 20c-16.5 0-30 13.5-30 30s13.5 30 30 30 30-13.5 30-30-13.5-30-30-30zm0 55c-13.8 0-25-11.2-25-25s11.2-25 25-25 25 11.2 25 25-11.2 25-25 25z"/><path fill="%232ecc71" d="M50 30c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20zm0 35c-8.3 0-15-6.7-15-15s6.7-15 15-15 15 6.7 15 15-6.7 15-15 15z"/></svg>');
+            background-size: contain;
+            animation: rotate 8s linear infinite;
+        }
+        
+        .wish-form {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            animation: slideUp 1s ease;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: var(--dark);
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(248, 197, 55, 0.3);
+        }
+        
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .btn {
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--dark);
+        }
+        
+        .btn-primary:hover {
+            background-color: #e6b422;
+        }
+        
+        .btn-whatsapp {
+            background-color: #25D366;
+        }
+        
+        .btn-instagram {
+            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+            color: white;
+        }
+        
+        .wishes-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .wish-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            animation: fadeIn 1s ease;
+            position: relative;
+        }
+        
+        .wish-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .wish-header {
+            background-color: var(--primary);
+            padding: 15px;
+            color: var(--dark);
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .wish-body {
+            padding: 20px;
+        }
+        
+        .wish-text {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .wish-footer {
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .wish-type {
+            background-color: var(--secondary);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 50px;
+            font-size: 12px;
+        }
+        
+        .share-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .share-btn {
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        
+        .dhol {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="%23e84c3d"/><circle cx="50" cy="50" r="35" fill="%23f8c537"/><circle cx="50" cy="50" r="25" fill="%23e84c3d"/></svg>');
+            background-size: contain;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+            z-index: 100;
+        }
+        
+        .pepa {
+            position: fixed;
+            bottom: 120px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23f8c537" d="M20 50c0-16.6 13.4-30 30-30s30 13.4 30 30-13.4 30-30 30-30-13.4-30-30zm5 0c0 13.8 11.2 25 25 25s25-11.2 25-25-11.2-25-25-25-25 11.2-25 25z"/><path fill="%23e84c3d" d="M80 45l-30-15v30l30-15z"/></svg>');
+            background-size: contain;
+            cursor: pointer;
+            z-index: 100;
+            transition: all 0.3s;
+        }
+        
+        .pepa:hover {
+            transform: scale(1.1) rotate(10deg);
+        }
+        
+        .dhol:hover {
+            animation: shake 0.5s infinite;
+        }
+        
+        .bihu-dancers {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 50"><path fill="%23f8c537" d="M0 50h500v-5c-20-10-40-10-60 0-20 10-40 10-60 0-20-10-40-10-60 0-20 10-40 10-60 0-20-10-40-10-60 0-20 10-40 10-60 0-20-10-40-10-60 0-20 10-40 10-60 0z"/></svg>');
+            background-repeat: repeat-x;
+            opacity: 0.8;
+            animation: moveDancers 20s linear infinite;
+            z-index: 1;
+        }
+        
+        .firework {
+            position: fixed;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(248, 197, 55, 0.7);
+            animation: firework 2s ease-out forwards;
+            opacity: 0;
+            z-index: 10;
+            pointer-events: none;
+        }
+        
+        .sound-control {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255,255,255,0.8);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 100;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        
+        .sound-control:hover {
+            transform: scale(1.1);
+        }
+        
+        .sound-control i {
+            font-size: 24px;
+            color: var(--secondary);
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes shake {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(5deg); }
+            50% { transform: rotate(0deg); }
+            75% { transform: rotate(-5deg); }
+            100% { transform: rotate(0deg); }
+        }
+        
+        @keyframes moveDancers {
+            from { background-position: 0 0; }
+            to { background-position: 500px 0; }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes firework {
+            0% { 
+                transform: translate(0, 0);
+                opacity: 1;
+                width: 5px;
+                height: 5px;
+            }
+            100% { 
+                transform: translate(var(--x), var(--y));
+                opacity: 0;
+                width: 1px;
+                height: 1px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .wishes-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                display: block;
+                width: 100%;
+                margin-right: 0;
+            }
+            
+            .share-buttons {
+                flex-direction: column;
+            }
+            
+            .share-btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .pepa {
+                bottom: 110px;
+                right: 25px;
+                width: 50px;
+                height: 50px;
+            }
+            
+            .designer-credit {
+                font-size: 12px;
+                bottom: 5px;
+                left: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sound-control" id="soundControl">
+        <i class="fas fa-volume-up"></i>
+    </div>
+    
+    <div class="designer-credit">Design By: পিংকু বৰা</div>
+    
+    <div class="container">
+        <header>
+            <h1 class="logo">বিহুৰ শুভেচ্ছা</h1>
+            <p class="subtitle">এই বিহুৱত আপোনাৰ শুভেচ্ছা সকলোৰে সৈতে ভগাই লওক</p>
+            <div class="bihu-icon"></div>
+        </header>
+        
+        <section class="wish-form">
+            <h2>আপোনাৰ শুভেচ্ছা পঠিয়াওক</h2>
+            <form id="wishForm">
+                <div class="form-group">
+                    <label for="name">আপোনাৰ নাম</label>
+                    <input type="text" id="name" placeholder="আপোনাৰ নাম লিখক" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">শুভেচ্ছাৰ বাৰ্তা</label>
+                    <textarea id="message" placeholder="আপোনাৰ শুভেচ্ছাৰ বাৰ্তা লিখক" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="type">বিহুৰ প্ৰকাৰ</label>
+                    <select id="type" required>
+                        <option value="">নিৰ্বাচন কৰক</option>
+                        <option value="ব'হাগ বিহু">ব'হাগ বিহু</option>
+                        <option value="কঙালী বিহু">কঙালী বিহু</option>
+                        <option value="মাঘ বিহু">মাঘ বিহু</option>
+                        <option value="অন্যান্য">অন্যান্য</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">শুভেচ্ছা পঠিয়াওক</button>
+            </form>
+        </section>
+        
+        <section class="wishes-container" id="wishesContainer">
+            <!-- Sample wish cards -->
+            <div class="wish-card">
+                <div class="wish-header">
+                    <span>পিংকু বৰা</span>
+                    <span class="wish-type">ব'হাগ বিহু</span>
+                </div>
+                <div class="wish-body">
+                    <p class="wish-text">সকলোকে ব'হাগ বিহুৰ শুভেচ্ছা জনালোঁ। এই বিহুৱে সকলোৰে জীৱনত সুখ, শান্তি আৰু সমৃদ্ধি কঢ়িয়াই আনক। বিহুৰ আনন্দ সকলোৰে মাজত বিৰাজ কৰক!</p>
+                    <div class="share-buttons">
+                        <a href="#" class="share-btn btn-whatsapp" onclick="shareToWhatsApp(this)"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="#" class="share-btn btn-instagram" onclick="shareToInstagram(this)"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+                </div>
+                <div class="wish-footer">
+                    <span>আজি</span>
+                </div>
+            </div>
+            
+            <div class="wish-card">
+                <div class="wish-header">
+                    <span>প্ৰিয়া</span>
+                    <span class="wish-type">ব'হাগ বিহু</span>
+                </div>
+                <div class="wish-body">
+                    <p class="wish-text">বিহুৰ এই শুভ সময়ত সকলোকে মোৰ শুভেচ্ছা জনালোঁ। নতুন বছৰে আপোনালোকৰ জীৱনত নতুন আশা, নতুন সপোন আৰু নতুন সুযোগ কঢ়িয়াই আনক। বিহুৰ শুভেচ্ছা!</p>
+                    <div class="share-buttons">
+                        <a href="#" class="share-btn btn-whatsapp" onclick="shareToWhatsApp(this)"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="#" class="share-btn btn-instagram" onclick="shareToInstagram(this)"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+                </div>
+                <div class="wish-footer">
+                    <span>কালি</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div class="dhol" id="dhol"></div>
+    <div class="pepa" id="pepa"></div>
+    <div class="bihu-dancers"></div>
+    
+    <!-- Audio elements for Bihu sounds -->
+    <audio id="bihuMusic" loop>
+        <!-- Replace with actual Bihu song -->
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="dholSound">
+        <!-- Replace with actual dhol sound -->
+        <source src="https://www.soundjay.com/buttons/sounds/button-10.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="pepaSound">
+        <!-- Replace with actual pepa sound -->
+        <source src="https://www.soundjay.com/buttons/sounds/button-09.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sound control
+            const soundControl = document.getElementById('soundControl');
+            const bihuMusic = document.getElementById('bihuMusic');
+            const dholSound = document.getElementById('dholSound');
+            const pepaSound = document.getElementById('pepaSound');
+            
+            let isPlaying = false;
+            
+            // Initialize sound
+            bihuMusic.volume = 0.5;
+            dholSound.volume = 0.6;
+            pepaSound.volume = 0.7;
+            soundControl.innerHTML = '<i class="fas fa-volume-mute"></i>';
+            
+            // Handle sound permission on user interaction
+            function initAudio() {
+                document.body.removeEventListener('click', initAudio);
+                document.body.removeEventListener('touchstart', initAudio);
+                
+                bihuMusic.muted = false;
+                const playPromise = bihuMusic.play();
+                
+                if (playPromise !== undefined) {
+                    playPromise.then(_ => {
+                        isPlaying = true;
+                        soundControl.innerHTML = '<i class="fas fa-volume-up"></i>';
+                    }).catch(error => {
+                        console.log('Audio playback failed:', error);
+                    });
+                }
+            }
+            
+            // Wait for user interaction before enabling audio
+            document.body.addEventListener('click', initAudio);
+            document.body.addEventListener('touchstart', initAudio);
+            
+            soundControl.addEventListener('click', function() {
+                if (isPlaying) {
+                    bihuMusic.pause();
+                    soundControl.innerHTML = '<i class="fas fa-volume-mute"></i>';
+                } else {
+                    bihuMusic.play().then(() => {
+                        soundControl.innerHTML = '<i class="fas fa-volume-up"></i>';
+                    }).catch(error => {
+                        alert('অনুগ্ৰহ কৰি পৃষ্ঠাখনত ক্লিক কৰক বা শব্দ নিয়ন্ত্ৰণ অনুমতি দিয়ক');
+                    });
+                }
+                isPlaying = !isPlaying;
+            });
+            
+            // Form submission
+            const wishForm = document.getElementById('wishForm');
+            const wishesContainer = document.getElementById('wishesContainer');
+            
+            wishForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value.trim();
+                const message = document.getElementById('message').value.trim();
+                const type = document.getElementById('type').value;
+                
+                if (!name || !message || !type) {
+                    alert('অনুগ্ৰহ কৰি সকলো তথ্য পূৰণ কৰক');
+                    return;
+                }
+                
+                // Create new wish card
+                const wishCard = document.createElement('div');
+                wishCard.className = 'wish-card';
+                wishCard.innerHTML = `
+                    <div class="wish-header">
+                        <span>${escapeHtml(name)}</span>
+                        <span class="wish-type">${escapeHtml(type)}</span>
+                    </div>
+                    <div class="wish-body">
+                        <p class="wish-text">${escapeHtml(message)}</p>
+                        <div class="share-buttons">
+                            <a href="#" class="share-btn btn-whatsapp" onclick="shareToWhatsApp(this)"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="#" class="share-btn btn-instagram" onclick="shareToInstagram(this)"><i class="fab fa-instagram"></i> Instagram</a>
+                        </div>
+                    </div>
+                    <div class="wish-footer">
+                        <span>এতিয়া</span>
+                    </div>
+                `;
+                
+                // Add animation
+                wishCard.style.opacity = '0';
+                wishesContainer.prepend(wishCard);
+                
+                // Animate the new card
+                setTimeout(() => {
+                    wishCard.style.opacity = '1';
+                    createFireworks(5);
+                    playDholSound();
+                }, 10);
+                
+                // Reset form
+                wishForm.reset();
+            });
+            
+            // Dhol animation and sound
+            const dhol = document.getElementById('dhol');
+            dhol.addEventListener('click', function() {
+                createFireworks(10);
+                this.style.animation = 'shake 0.5s infinite';
+                setTimeout(() => {
+                    this.style.animation = 'pulse 2s infinite';
+                }, 1000);
+                playDholSound();
+            });
+            
+            // Pepa animation and sound
+            const pepa = document.getElementById('pepa');
+            pepa.addEventListener('click', function() {
+                this.style.transform = 'scale(1.2) rotate(15deg)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1) rotate(0)';
+                }, 300);
+                playPepaSound();
+            });
+            
+            function playDholSound() {
+                try {
+                    dholSound.currentTime = 0;
+                    dholSound.play();
+                } catch (e) {
+                    console.log('Dhol sound error:', e);
+                }
+            }
+            
+            function playPepaSound() {
+                try {
+                    pepaSound.currentTime = 0;
+                    pepaSound.play();
+                } catch (e) {
+                    console.log('Pepa sound error:', e);
+                }
+            }
+            
+            // Create fireworks
+            function createFireworks(count) {
+                for (let i = 0; i < count; i++) {
+                    const firework = document.createElement('div');
+                    firework.className = 'firework';
+                    
+                    // Random position
+                    const x = Math.random() * window.innerWidth;
+                    const y = Math.random() * window.innerHeight * 0.7;
+                    
+                    firework.style.left = `${x}px`;
+                    firework.style.top = `${y}px`;
+                    
+                    // Random direction and color
+                    const angle = Math.random() * Math.PI * 2;
+                    const distance = 50 + Math.random() * 100;
+                    const xDist = Math.cos(angle) * distance;
+                    const yDist = Math.sin(angle) * distance;
+                    
+                    firework.style.setProperty('--x', `${xDist}px`);
+                    firework.style.setProperty('--y', `${yDist}px`);
+                    
+                    // Random color
+                    const colors = ['#f8c537', '#e84c3d', '#2ecc71', '#3498db'];
+                    const color = colors[Math.floor(Math.random() * colors.length)];
+                    firework.style.boxShadow = `0 0 10px 5px ${color}`;
+                    
+                    document.body.appendChild(firework);
+                    
+                    // Remove after animation
+                    setTimeout(() => {
+                        if (firework.parentNode) {
+                            firework.parentNode.removeChild(firework);
+                        }
+                    }, 2000);
+                }
+            }
+            
+            // Create some initial fireworks
+            setTimeout(() => {
+                createFireworks(3);
+            }, 1000);
+        });
+        
+        // Helper function to escape HTML
+        function escapeHtml(unsafe) {
+            return unsafe
+                .replace(/&/g, "&")
+                .replace(/</g, "<")
+                .replace(/>/g, ">")
+                .replace(/"/g, """)
+                .replace(/'/g, "'");
+        }
+        
+        // Share functions
+        function shareToWhatsApp(button) {
+            const card = button.closest('.wish-card');
+            const name = card.querySelector('.wish-header span:first-child').textContent;
+            const message = card.querySelector('.wish-text').textContent;
+            const type = card.querySelector('.wish-type').textContent;
+            
+            const shareText = `বিহুৰ শুভেচ্ছা!\n\n${name}ৰ পৰা:\n${message}\n\n${type}\n\nএই লিংকত গৈ আপোনাৰো শুভেচ্ছা পঠিয়াওক: ${window.location.href}`;
+            const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(shareText)}`;
+            
+            window.open(whatsappUrl, '_blank');
+            return false;
+        }
+        
+        function shareToInstagram(button) {
+            const card = button.closest('.wish-card');
+            const name = card.querySelector('.wish-header span:first-child').textContent;
+            const message = card.querySelector('.wish-text').textContent;
+            const type = card.querySelector('.wish-type').textContent;
+            
+            const shareText = `বিহুৰ শুভেচ্ছা!\n\n${name}ৰ পৰা:\n${message}\n\n${type}`;
+            
+            if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                const instagramUrl = `instagram://library?AssetPath=${encodeURIComponent(window.location.href)}&InstagramCaption=${encodeURIComponent(shareText)}`;
+                window.location.href = instagramUrl;
+                setTimeout(() => {
+                    window.location.href = `https://www.instagram.com/?text=${encodeURIComponent(shareText)}`;
+                }, 500);
+            } else {
+                alert('ইনষ্টাগ্ৰামত শ্বেয়াৰ কৰিবলৈ:\n1. স্ক্ৰীনশ্বট লওক\n2. ইনষ্টাগ্ৰাম অ্যাপত গৈ পোষ্ট কৰক\n3. এই বাৰ্তাটো কপি কৰি লিখক:\n\n' + shareText);
+            }
+            
+            return false;
+        }
+    </script>
+</body>
+</html>
